@@ -1,4 +1,18 @@
 /**
+ * @module Ejercicio 4 - Recolección de objetos
+ * @summary
+ * Crear una función llamada getPoints para calcular los puntos ganados por un jugador al completar una fase de un juego. Los puntos dependen de la fase completada y de los objetos recolectados durante la misma, siguiendo este algoritmo:  
+ * * Calcular los múltiplos de cada objeto recolectado que sean menores que la fase completada.  
+ * * Combinar todas las listas de múltiplos en una única lista.  
+ * * Eliminar los duplicados de la lista combinada.  
+ * * Sumar los elementos únicos de la lista combinada y devolverlo.  
+ * 
+ * @example
+ * getPoints(25, [2, 3, 7]) // 211
+ * getPoints(10, [3, 5])    // 23
+ */
+
+/**
  * Calcula los puntos ganados por un jugador al completar una fase de un juego.
  * Los puntos dependen, tanto de la fase completada, como de los objetos que se han recolectado durante la misma, siguiendo el algoritmo:
  * @param phase     // Fase completada

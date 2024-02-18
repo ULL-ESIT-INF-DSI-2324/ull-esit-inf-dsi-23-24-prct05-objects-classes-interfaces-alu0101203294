@@ -1,4 +1,14 @@
 /**
+ * @module Ejercicio 5 - Tablas de multiplicar
+ * @summary
+ * Crear una función llamada productTable que reciba como parámetro un número N mayor o igual a 1 y devuelva un array de arrays con N tablas de multiplicar, donde cada tabla de multiplicar contiene los primeros N productos. En caso de que el argumento no sea correcto, la función debe devolver undefined.
+ * @example
+ * productTable(2) // [[1, 2], [2, 4]]
+ * productTable(3) // [[1, 2, 3], [2, 4, 6], [3, 6, 9]]
+ * productTable(4) // [[1, 2, 3, 4], [2, 4, 6, 8], [3, 6, 9, 12], [4, 8, 12, 16]]
+ */
+
+/**
  * Función que recibe un número entero positivo N y devuelve un array de arrays con N tablas de multiplicar, donde cada tabla de multiplicar contiene los primeros N productos
  * @param N     // Número entero positivo
  * @returns     // Retorna un array de arrays con N tablas de multiplicar

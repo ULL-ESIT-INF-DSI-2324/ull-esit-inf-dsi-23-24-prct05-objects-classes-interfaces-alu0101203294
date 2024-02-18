@@ -1,9 +1,18 @@
 /**
- * Defina un tipo de datos para representar números racionales como pares de valores numéricos (numerador y denominador). Luego, escriba funciones para calcular las operaciones sobre números racionales: valor absoluto (función abs), inverso multiplicativo (función inv), suma (función add), resta (función sub), multiplicación (función mult), y división (función div). Cada función debe devolver el número racional simplificado a su forma más reducida, utilizando una función mcd(num, denom) para calcular el máximo común divisor de los valores del numerador y denominador. Por ejemplo, el racional 5/20 se simplificaría a 1/4, donde mcd(5, 20) devuelve 5.
- * @module Ejercicio 1
+ * @module Ejercicio 1 - Números racionales
+ * @summary
  * 
- * Definición de tipo para números racionales
+ * Definir un tipo de datos para representar números racionales como pares de valores numéricos, implementar funciones para operaciones como calcular el valor absoluto, obtener el inverso multiplicativo, sumar, restar, multiplicar y dividir estos racionales. Asegurar que todas las funciones devuelvan los resultados en su forma más reducida, simplificando los racionales utilizando una función para calcular el máximo común divisor de los numeradores y denominadores. Esto garantiza que los resultados estén expresados con los valores mínimos posibles. 
+ * @example
+ * Valor absoluto de [ 5, 20 ] es [ 1, 4 ]
+ * Inverso multiplicativo de [ 5, 20 ] es [ 4, 1 ]
+ * Suma de [ 5, 20 ] y [ 3, 8 ] es [ 5, 8 ]
+ * Resta de [ 5, 20 ] y [ 3, 8 ] es [ 1, -8 ]
+ * Multiplicación de [ 5, 20 ] y [ 3, 8 ] es [ 3, 32 ]
+ * División de [ 5, 20 ] y [ 3, 8 ] es [ 2, 3 ]
  */
+
+//Definición de tipo para números racionales
 type Racional = [number, number];
 
 /**

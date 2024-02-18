@@ -1,4 +1,15 @@
 /**
+ * @module Ejercicio 7 - El Cartesiano
+ * @summary
+ * Crear una función llamada getCartesianPath que tome como argumento un array de letras que representan las direcciones del paseo generado por la aplicación y un número entero n que representa el tiempo disponible. La función deberá devolver verdadero si el paseo se puede completar exactamente en n minutos, considerando que cada bloque se recorre en un minuto y que queremos regresar al punto de partida. De lo contrario, la función deberá devolver falso. En caso de recibir argumentos no válidos, como un array vacío, la función deberá devolver undefined.
+ * @example
+ * getCartesianPath(['n', 's', 'e', 'o'], 4) // true - (norte, sur, este, oeste)
+ * getCartesianPath(['n', 's', 'e', 'o'], 5) // false - (No se puede realizar en 5 minutos)
+ * getCartesianPath(['n', 's', 'e', 'o', 'n', 's'], 6) // true - (norte, sur, este, oeste, norte, sur)
+ * getCartesianPath([], 5) // undefined - (No se puede realizar un paseo sin movimientos)
+ */
+
+/**
  * Función que recibe como argumento un array con las letras que definen el paseo que ha generado la app y devuelva verdadero o falso si el paseo se puede realizar en exactamente n minutos
  * @param path      // Array con las letras que definen el paseo que ha generado la app
  * @param minutes   // Número de minutos que debe durar el paseo

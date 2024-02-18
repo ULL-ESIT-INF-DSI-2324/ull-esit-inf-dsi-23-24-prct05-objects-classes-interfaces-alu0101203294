@@ -1,4 +1,13 @@
 /**
+ * @module Ejercicio 3 - Scrabble
+ * @summary
+ * Crea una función llamada getScore que calcule la puntuación de una lista de palabras en español en el juego Scrabble basándose en un sistema de puntuación predefinido para cada letra. Esta función debe reemplazar las letras acentuadas con sus correspondientes letras sin acento y devolver una lista de puntos numéricos para cada palabra en la lista de entrada. Si una palabra contiene una letra no permitida, la función debe devolver un valor indefinido para esa palabra. Se asigna un valor numérico a cada letra Por ejemplo, la letra A vale 1 punto y la letra Z vale 10 puntos. La función debe utilizar estas reglas para calcular la puntuación de cada palabra en la lista de entrada y devolver la lista de puntuaciones correspondiente.
+ * @example
+ * getScore([]) // []
+ * getScore(['kilo', 'almendras', 'llano', 'wenceslao', 'ratón']) // [undefined, 12, 11, undefined, 5]
+ * getScore(['Hola', 'me', 'llamo', 'Jose', 'chao']) // [7, 4, 13, 11, 7]
+ */
+/**
  * Dada una lista de palabras, devuelve un array con la puntuación de cada palabra
  * @param words 
  * @returns 

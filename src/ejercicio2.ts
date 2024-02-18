@@ -1,5 +1,15 @@
 /**
- * Ejercicio 2: Señales corporales
+ * @module Ejercicio 2 - Señales corporales
+ * @summary
+ * Convertir un número entero positivo en una lista de señales corporales, según un conjunto predefinido de señales. Cada señal corporal se asigna a un valor numérico específico. La función debe manejar correctamente los casos en los que el número recibido como argumento no es un entero positivo, devolviendo undefined. 
+ * @example
+ * fromIntToActions(192) // [Agacharse, Dar un aplauso]
+ * fromIntToActions(129) // [Parpadear, Dar un aplauso]
+ * fromIntToActions(257) // [Parpadear]
+ * fromIntToActions(256) // []
+ * fromIntToActions(515) // [Parpadear, Parpadear dos veces]
+ * fromIntToActions(84)  // [Mover la nariz, Saltar, Agacharse]
+ * fromIntToActions(-14) // undefined
  */
 enum SeñalCorporal {
     'Parpadear' = 1,
