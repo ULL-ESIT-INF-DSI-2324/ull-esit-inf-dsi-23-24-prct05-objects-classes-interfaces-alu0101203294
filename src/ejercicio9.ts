@@ -12,6 +12,9 @@
  * map((item) => item * 2, [1, 2, 3]) // [2, 4, 6]
  */
 
+/**
+ * @type List<T> // Tipo de dato lista
+ */
 export type List<T> = T[];
 /**
  * Función que toma dos listas y devuelve la concatenación de las dos listas
