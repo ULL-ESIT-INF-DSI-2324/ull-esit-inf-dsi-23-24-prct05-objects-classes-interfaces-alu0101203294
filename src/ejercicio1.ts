@@ -12,8 +12,11 @@
  * División de [ 5, 20 ] y [ 3, 8 ] es [ 2, 3 ]
  */
 
-//Definición de tipo para números racionales
-type Racional = [number, number];
+/**
+ * Definición de tipo para números racionales
+ * @type Racional // Número racional
+ * */
+export type Racional = [number, number];
 
 /**
  * Función para calcular el máximo común divisor (MCD)

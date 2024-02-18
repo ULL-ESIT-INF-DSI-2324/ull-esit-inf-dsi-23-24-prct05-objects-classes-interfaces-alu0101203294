@@ -11,7 +11,10 @@
  * fromIntToActions(84)  // [Mover la nariz, Saltar, Agacharse]
  * fromIntToActions(-14) // undefined
  */
-enum SeñalCorporal {
+/**
+ * @enum SeñalCorporal
+ */
+export enum SeñalCorporal {
   'Parpadear' = 1,
   'Parpadear dos veces' = 2,
   'Mover la nariz' = 4,
@@ -21,8 +24,10 @@ enum SeñalCorporal {
   'Agacharse' = 64,
   'Dar un aplauso' = 128,
 }
-
-type Señal = keyof typeof SeñalCorporal;
+/**
+ * @type Señal
+ */
+export type Señal = keyof typeof SeñalCorporal;
 
 /**
  * Dado un número entero, devuelve un array con las señales corporales que se pueden realizar

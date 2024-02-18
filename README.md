@@ -8,7 +8,15 @@
 
 Práctica en la que resolveremos los 10 ejercicios de programación propuestos relacionados con **Arrays, tuplas y enumerados**.
 
-Los ejercios propuestos como práctica principal son:
+#### Aprendizaje
+
+En TypeScript, la capacidad de definir tipos personalizados y estructuras de datos complejas mediante tuplas proporciona una vía clara y segura para representar datos dentro de los programas.
+Los enumerados en TypeScript ofrecen una forma eficaz de definir conjuntos de constantes con nombres legibles.
+Ademas,existe una amplia variedad de métodos para operar con arrays como `map`, `filter`, `reduce`... Estos métodos ofrecen la posibilidad de transformar, filtrar y reducir conjuntos de datos de manera eficiente.
+
+---
+
+Los ejercios propuestos para esta práctica son:
 
 1. [Ejercicio 1](https://ull-esit-inf-dsi-2324.github.io/ull-esit-inf-dsi-23-24-prct04-arrays-tuples-enums-alu0101203294/modules/Ejercicio_1___N_meros_racionales.html) - Números racionales
 
@@ -41,6 +49,28 @@ Los ejercios propuestos como práctica principal son:
    Crear una función llamada getPaths que tome como argumento una matriz de tamaño N x M, donde N representa el número de filas y M el número de columnas. La función debe devolver una lista de todos los posibles caminos que llevan desde la esquina superior izquierda de la matriz a la esquina inferior derecha, moviéndose solo hacia abajo en el número de filas o hacia la derecha en el número de columnas. Cada camino debe ser representado como una lista con las componentes de la matriz visitadas durante el mismo.
 9. [Ejercicio 9](https://ull-esit-inf-dsi-2324.github.io/ull-esit-inf-dsi-23-24-prct04-arrays-tuples-enums-alu0101203294/modules/ejercicio9.html) - Operaciones con listas
 10. [Ejercicio 10](https://ull-esit-inf-dsi-2324.github.io/ull-esit-inf-dsi-23-24-prct04-arrays-tuples-enums-alu0101203294/modules/ejercicio10.html) - Menús saludables
+
+---
+
+#### Conclusiones
+
+Tras realizar esta practica, he reforzado mi conocimiento en TypeScript, especialmente en el manejo de arrays, tuplas y enumerados. Ademas aprendido buenas prácticas como la metodología de Desarrollo Dirigido por Pruebas (TDD) y la documentación de código (con Typedoc), lo que me permite escribir código más limpio. También he conocido el uso de herramientas como Typedoc, Mocha y Chai, lo que me hace más eficiente en la generación de documentación y pruebas automatizadas.
+
+---
+
+#### Referencias
+
+[TypeDoc Example](https://typedoc.org/example/index.html)
+
+[Tags | TypeDoc](https://typedoc.org/guides/tags/)
+
+[Mocha](https://mochajs.org/)
+
+[Assertion Styles - Chai](https://www.chaijs.com/guide/styles/)
+
+[typedoc - npm](https://www.npmjs.com/package/typedoc)
+
+---
 
 [Informe en Github Pages](https://ull-esit-inf-dsi-2324.github.io/ull-esit-inf-dsi-23-24-prct04-arrays-tuples-enums-alu0101203294/)
 
