@@ -1,5 +1,7 @@
 /**
- * Ejercicio 1
+ * Defina un tipo de datos para representar números racionales como pares de valores numéricos (numerador y denominador). Luego, escriba funciones para calcular las operaciones sobre números racionales: valor absoluto (función abs), inverso multiplicativo (función inv), suma (función add), resta (función sub), multiplicación (función mult), y división (función div). Cada función debe devolver el número racional simplificado a su forma más reducida, utilizando una función mcd(num, denom) para calcular el máximo común divisor de los valores del numerador y denominador. Por ejemplo, el racional 5/20 se simplificaría a 1/4, donde mcd(5, 20) devuelve 5.
+ * @module Ejercicio 1
+ * 
  * Definición de tipo para números racionales
  */
 type Racional = [number, number];
