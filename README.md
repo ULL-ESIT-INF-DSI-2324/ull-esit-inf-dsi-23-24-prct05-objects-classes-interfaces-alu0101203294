@@ -8,7 +8,7 @@
 
 Práctica en la que resolveremos los 10 ejercicios de programación propuestos relacionados con **Arrays, tuplas y enumerados**.
 
-#### Aprendizaje
+#### Introducción - Aprendizaje
 
 En TypeScript, la capacidad de definir tipos personalizados y estructuras de datos complejas mediante tuplas proporciona una vía clara y segura para representar datos dentro de los programas.
 Los enumerados en TypeScript ofrecen una forma eficaz de definir conjuntos de constantes con nombres legibles.
