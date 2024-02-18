@@ -21,28 +21,40 @@
  * getCartesianPath([], 5) // undefined - (No se puede realizar un paseo sin movimientos)
  * ```
  */
-export function getCartesianPath(path: string[], minutes: number): boolean | undefined {
-    // Validar argumentos de entrada
-    if (!Array.isArray(path) || path.length === 0 || minutes < 0 || !Number.isInteger(minutes)) {
-        return undefined;
+export function getCartesianPath(
+  path: string[],
+  minutes: number,
+): boolean | undefined {
+  // Validar argumentos de entrada
+  if (
+    !Array.isArray(path) ||
+    path.length === 0 ||
+    minutes < 0 ||
+    !Number.isInteger(minutes)
+  ) {
+    return undefined;
+  }
+
+  // Contar los movimientos en cada dirección
+  const movements: { [key: string]: number } = {
+    n: 0,
+    s: 0,
+    e: 0,
+    o: 0,
+  };
+
+  for (const direction of path) {
+    if (movements.hasOwnProperty(direction)) {
+      movements[direction]++;
     }
+  }
 
-    // Contar los movimientos en cada dirección
-    const movements: { [key: string]: number } = {
-        'n': 0,
-        's': 0,
-        'e': 0,
-        'o': 0
-    };
-
-    for (const direction of path) {
-        if (movements.hasOwnProperty(direction)) {
-            movements[direction]++;
-        }
-    }
-
-    // Verificar si el camino nos devuelve al punto de partida
-    return movements['n'] === movements['s'] && movements['e'] === movements['o'] && path.length === minutes;
+  // Verificar si el camino nos devuelve al punto de partida
+  return (
+    movements['n'] === movements['s'] &&
+    movements['e'] === movements['o'] &&
+    path.length === minutes
+  );
 }
 
 // Ejemplos de uso

@@ -19,21 +19,21 @@
  * ```
  */
 export function productTable(N: number): number[][] | undefined {
-    // Validación del argumento de entrada
-    if (N < 1 || !Number.isInteger(N)) {
-        return undefined;
-    }
+  // Validación del argumento de entrada
+  if (N < 1 || !Number.isInteger(N)) {
+    return undefined;
+  }
 
-    // Crear la tabla de multiplicar
-    const table: number[][] = [];
-    for (let i = 1; i <= N; i++) {
-        const row: number[] = [];
-        for (let j = 1; j <= N; j++) {
-            row.push(i * j);
-        }
-        table.push(row);
+  // Crear la tabla de multiplicar
+  const table: number[][] = [];
+  for (let i = 1; i <= N; i++) {
+    const row: number[] = [];
+    for (let j = 1; j <= N; j++) {
+      row.push(i * j);
     }
-    return table;
+    table.push(row);
+  }
+  return table;
 }
 
 // Ejemplos de uso

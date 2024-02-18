@@ -17,9 +17,9 @@
  * ```
  */
 export function multiplyAll(numbers: number[]): (value: number) => number[] {
-    return function(value: number): number[] {
-        return numbers.map(num => num * value);
-    };
+  return function (value: number): number[] {
+    return numbers.map((num) => num * value);
+  };
 }
 
 // Ejemplos de uso

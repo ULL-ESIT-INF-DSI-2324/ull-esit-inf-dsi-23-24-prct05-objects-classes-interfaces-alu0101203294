@@ -1,8 +1,8 @@
 /**
  * @module Ejercicio 1 - Números racionales
  * @summary
- * 
- * Definir un tipo de datos para representar números racionales como pares de valores numéricos, implementar funciones para operaciones como calcular el valor absoluto, obtener el inverso multiplicativo, sumar, restar, multiplicar y dividir estos racionales. Asegurar que todas las funciones devuelvan los resultados en su forma más reducida, simplificando los racionales utilizando una función para calcular el máximo común divisor de los numeradores y denominadores. Esto garantiza que los resultados estén expresados con los valores mínimos posibles. 
+ *
+ * Definir un tipo de datos para representar números racionales como pares de valores numéricos, implementar funciones para operaciones como calcular el valor absoluto, obtener el inverso multiplicativo, sumar, restar, multiplicar y dividir estos racionales. Asegurar que todas las funciones devuelvan los resultados en su forma más reducida, simplificando los racionales utilizando una función para calcular el máximo común divisor de los numeradores y denominadores. Esto garantiza que los resultados estén expresados con los valores mínimos posibles.
  * @example
  * Valor absoluto de [ 5, 20 ] es [ 1, 4 ]
  * Inverso multiplicativo de [ 5, 20 ] es [ 4, 1 ]
@@ -20,30 +20,30 @@ type Racional = [number, number];
  * @param num   // Numerador
  * @param denom // Denominador
  * @returns     // Retorna el máximo común divisor (MCD) de dos números
- * ```typescript	
+ * ```typescript
  * mcd(12, 8) // 4
  * ```
  */
-export function mcd(num: number, denom: number): number {  
-    if (denom === 0) {
-        return num;
-    } else {
-        return mcd(denom, num % denom);
-    }
+export function mcd(num: number, denom: number): number {
+  if (denom === 0) {
+    return num;
+  } else {
+    return mcd(denom, num % denom);
+  }
 }
 
 /**
  * Función para simplificar un número racional
  * @param racional // Número racional
- * @returns        // Retorna el número racional simplificado 
+ * @returns        // Retorna el número racional simplificado
  * ```typescript
  * simplificarRacional([5, 20]) // [1, 4]
  * ```
  */
 export function simplificarRacional(racional: Racional): Racional {
-    const [num, denom] = racional;
-    const divisor = mcd(num, denom);
-    return [num / divisor, denom / divisor];
+  const [num, denom] = racional;
+  const divisor = mcd(num, denom);
+  return [num / divisor, denom / divisor];
 }
 
 /**
@@ -55,10 +55,9 @@ export function simplificarRacional(racional: Racional): Racional {
  * ```
  */
 export function abs(racional: Racional): Racional {
-    const [num, denom] = racional;
-    return simplificarRacional([Math.abs(num), Math.abs(denom)]);
+  const [num, denom] = racional;
+  return simplificarRacional([Math.abs(num), Math.abs(denom)]);
 }
-
 
 /**
  * Función para calcular el inverso multiplicativo de un número racional
@@ -69,13 +68,12 @@ export function abs(racional: Racional): Racional {
  * ```
  */
 export function inv(racional: Racional): Racional {
-    const [num, denom] = racional;
-    if (num === 0) {
-        throw new Error('No se puede calcular el inverso multiplicativo de 0.');
-    }
-    return simplificarRacional([denom, num]);
+  const [num, denom] = racional;
+  if (num === 0) {
+    throw new Error('No se puede calcular el inverso multiplicativo de 0.');
+  }
+  return simplificarRacional([denom, num]);
 }
-
 
 /**
  * Función para sumar dos números racionales
@@ -87,13 +85,12 @@ export function inv(racional: Racional): Racional {
  * ```
  */
 export function add(racional1: Racional, racional2: Racional): Racional {
-    const [num1, denom1] = racional1;
-    const [num2, denom2] = racional2;
-    const nuevoDenom = denom1 * denom2;
-    const nuevoNum = num1 * denom2 + num2 * denom1;
-    return simplificarRacional([nuevoNum, nuevoDenom]);
+  const [num1, denom1] = racional1;
+  const [num2, denom2] = racional2;
+  const nuevoDenom = denom1 * denom2;
+  const nuevoNum = num1 * denom2 + num2 * denom1;
+  return simplificarRacional([nuevoNum, nuevoDenom]);
 }
-
 
 /**
  * Función para restar dos números racionales
@@ -105,13 +102,12 @@ export function add(racional1: Racional, racional2: Racional): Racional {
  * ```
  */
 export function sub(racional1: Racional, racional2: Racional): Racional {
-    const [num1, denom1] = racional1;
-    const [num2, denom2] = racional2;
-    const nuevoDenom = denom1 * denom2;
-    const nuevoNum = num1 * denom2 - num2 * denom1;
-    return simplificarRacional([nuevoNum, nuevoDenom]);
+  const [num1, denom1] = racional1;
+  const [num2, denom2] = racional2;
+  const nuevoDenom = denom1 * denom2;
+  const nuevoNum = num1 * denom2 - num2 * denom1;
+  return simplificarRacional([nuevoNum, nuevoDenom]);
 }
-
 
 /**
  * Función para multiplicar dos números racionales
@@ -123,13 +119,12 @@ export function sub(racional1: Racional, racional2: Racional): Racional {
  * ```
  */
 export function mult(racional1: Racional, racional2: Racional): Racional {
-    const [num1, denom1] = racional1;
-    const [num2, denom2] = racional2;
-    const nuevoNum = num1 * num2;
-    const nuevoDenom = denom1 * denom2;
-    return simplificarRacional([nuevoNum, nuevoDenom]);
+  const [num1, denom1] = racional1;
+  const [num2, denom2] = racional2;
+  const nuevoNum = num1 * num2;
+  const nuevoDenom = denom1 * denom2;
+  return simplificarRacional([nuevoNum, nuevoDenom]);
 }
-
 
 /**
  * Función para dividir dos números racionales
@@ -141,16 +136,15 @@ export function mult(racional1: Racional, racional2: Racional): Racional {
  * ```
  */
 export function div(racional1: Racional, racional2: Racional): Racional {
-    const [num1, denom1] = racional1;
-    const [num2, denom2] = racional2;
-    if (num2 === 0) {
-        throw new Error('No se puede dividir por 0.');
-    }
-    const nuevoNum = num1 * denom2;
-    const nuevoDenom = denom1 * num2;
-    return simplificarRacional([nuevoNum, nuevoDenom]);
+  const [num1, denom1] = racional1;
+  const [num2, denom2] = racional2;
+  if (num2 === 0) {
+    throw new Error('No se puede dividir por 0.');
+  }
+  const nuevoNum = num1 * denom2;
+  const nuevoDenom = denom1 * num2;
+  return simplificarRacional([nuevoNum, nuevoDenom]);
 }
-
 
 /**
  * Ejemplo de uso de las funciones
@@ -158,9 +152,37 @@ export function div(racional1: Racional, racional2: Racional): Racional {
 const racional1: Racional = [5, 20];
 const racional2: Racional = [3, 8];
 
-console.log('Valor absoluto de', racional1, 'es', abs(racional1));                              // [1, 4]
-console.log('Inverso multiplicativo de', racional1, 'es', inv(racional1));                      // [4, 1]
-console.log('Suma de', racional1, 'y', racional2, 'es', add(racional1, racional2));             // [5, 8]
-console.log('Resta de', racional1, 'y', racional2, 'es', sub(racional1, racional2));            // [1, -8]
-console.log('Multiplicación de', racional1, 'y', racional2, 'es', mult(racional1, racional2));  // [3, 32]
-console.log('División de', racional1, 'y', racional2, 'es', div(racional1, racional2));         // [2, 3]
+console.log('Valor absoluto de', racional1, 'es', abs(racional1)); // [1, 4]
+console.log('Inverso multiplicativo de', racional1, 'es', inv(racional1)); // [4, 1]
+console.log(
+  'Suma de',
+  racional1,
+  'y',
+  racional2,
+  'es',
+  add(racional1, racional2),
+); // [5, 8]
+console.log(
+  'Resta de',
+  racional1,
+  'y',
+  racional2,
+  'es',
+  sub(racional1, racional2),
+); // [1, -8]
+console.log(
+  'Multiplicación de',
+  racional1,
+  'y',
+  racional2,
+  'es',
+  mult(racional1, racional2),
+); // [3, 32]
+console.log(
+  'División de',
+  racional1,
+  'y',
+  racional2,
+  'es',
+  div(racional1, racional2),
+); // [2, 3]

@@ -17,33 +17,39 @@
  * ```
  */
 export function getPaths(N: number, M: number, matrix: number[][]): number[][] {
-    if (N === 0 || M === 0) return [];
+  if (N === 0 || M === 0) return [];
 
-    const paths: number[][] = [];
-    const stack: { row: number, col: number, path: number[] }[] = [];
+  const paths: number[][] = [];
+  const stack: { row: number; col: number; path: number[] }[] = [];
 
-    stack.push({ row: 0, col: 0, path: [matrix[0][0]] });
+  stack.push({ row: 0, col: 0, path: [matrix[0][0]] });
 
-    while (stack.length > 0) {
-        const { row, col, path } = stack.pop()!;
-        
-        if (row === N - 1 && col === M - 1) {
-            paths.push(path);
-            continue;
-        }
-        
-        if (row + 1 < N) {
-            stack.push({ row: row + 1, col, path: [...path, matrix[row + 1][col]] });
-        }
-        
-        if (col + 1 < M) {
-            stack.push({ row, col: col + 1, path: [...path, matrix[row][col + 1]] });
-        }
+  while (stack.length > 0) {
+    const { row, col, path } = stack.pop()!;
+
+    if (row === N - 1 && col === M - 1) {
+      paths.push(path);
+      continue;
     }
 
-    return paths;
+    if (row + 1 < N) {
+      stack.push({ row: row + 1, col, path: [...path, matrix[row + 1][col]] });
+    }
+
+    if (col + 1 < M) {
+      stack.push({ row, col: col + 1, path: [...path, matrix[row][col + 1]] });
+    }
+  }
+
+  return paths;
 }
 
 // Ejemplo de uso
-console.log(getPaths(3, 2, [[0, 1], [2, 3], [4, 5]])); // Devuelve [ [ 0, 1, 3, 5 ], [ 0, 2, 3, 5 ], [ 0, 2, 4, 5 ] ]
+console.log(
+  getPaths(3, 2, [
+    [0, 1],
+    [2, 3],
+    [4, 5],
+  ]),
+); // Devuelve [ [ 0, 1, 3, 5 ], [ 0, 2, 3, 5 ], [ 0, 2, 4, 5 ] ]
 console.log(getPaths(0, 2, [])); // Devuelve []
