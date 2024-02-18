@@ -47,8 +47,12 @@ Los ejercios propuestos para esta práctica son:
 8. [Ejercicio 8](https://ull-esit-inf-dsi-2324.github.io/ull-esit-inf-dsi-23-24-prct04-arrays-tuples-enums-alu0101203294/modules/Ejercicio_8___Todos_los_caminos_llevan_a_Roma.html) - Todos los caminos llevan a Roma
 
    Crear una función llamada getPaths que tome como argumento una matriz de tamaño N x M, donde N representa el número de filas y M el número de columnas. La función debe devolver una lista de todos los posibles caminos que llevan desde la esquina superior izquierda de la matriz a la esquina inferior derecha, moviéndose solo hacia abajo en el número de filas o hacia la derecha en el número de columnas. Cada camino debe ser representado como una lista con las componentes de la matriz visitadas durante el mismo.
-9. [Ejercicio 9](https://ull-esit-inf-dsi-2324.github.io/ull-esit-inf-dsi-23-24-prct04-arrays-tuples-enums-alu0101203294/modules/ejercicio9.html) - Operaciones con listas
+9. [Ejercicio 9](https://ull-esit-inf-dsi-2324.github.io/ull-esit-inf-dsi-23-24-prct04-arrays-tuples-enums-alu0101203294/modules/Ejercicio_9___Operaciones_con_listas.html) - Operaciones con listas
+
+   Este ejercicio consiste en implementar un conjunto de operaciones sobre listas, incluyendo append (añadir elementos de una lista a otra), concatenate (combinar listas en una única lista), filter (obtener elementos que cumplan un predicado), length (obtener la longitud de una lista), map (aplicar una función a todos los elementos de una lista), reduce (reducir elementos de una lista aplicando una función acumuladora) y reverse (obtener una lista con elementos en orden inverso)
 10. [Ejercicio 10](https://ull-esit-inf-dsi-2324.github.io/ull-esit-inf-dsi-23-24-prct04-arrays-tuples-enums-alu0101203294/modules/ejercicio10.html) - Menús saludables
+
+    Crear un conjunto de funciones para automatizar la creación de un menú saludable a partir de una lista de platos con información sobre su valor nutricional y grado de insalubridad. Seleccionar los platos más nutritivos primero, elegir los menos insalubres o priorizar los platos con la mejor relación entre valor nutricional y grado de insalubridad. El objetivo es maximizar el valor nutricional del menú sin exceder un límite de insalubridad predefinido.
 
 ---
 
