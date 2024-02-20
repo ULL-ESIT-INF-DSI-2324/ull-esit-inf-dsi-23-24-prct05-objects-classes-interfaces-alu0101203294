@@ -3,14 +3,6 @@
         "./src/index.ts",
         "./src/ejercicio1.ts",
         "./src/ejercicio2.ts",
-        "./src/ejercicio3.ts",
-        "./src/ejercicio4.ts",
-        "./src/ejercicio5.ts",
-        "./src/ejercicio6.ts",
-        "./src/ejercicio7.ts",
-        "./src/ejercicio8.ts",
-        "./src/ejercicio9.ts",
-        "./src/ejercicio10.ts"
     ],
     "out": "./docs"
 }
