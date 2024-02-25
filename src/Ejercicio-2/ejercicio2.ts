@@ -1,9 +1,22 @@
+/**
+ * @module Ejercicio-2
+ * @summary
+ * 
+ * Solución orientada a objetos para automatizar el diseño de menús saludables. 
+ * Se define una interfaz Dish para representar un plato con propiedades de valor nutricional e insalubridad. 
+ * La clase MenuInstance encapsula un conjunto de platos y una restricción de insalubridad máxima. 
+ * La clase MenuSolution representa una solución al problema con métodos para agregar platos y calcular la insalubridad total del menú. 
+ * La clase Solver utiliza diferentes estrategias implementadas en las clases NutritionalValueStrategy, UnhealthyScoreStrategy y NutritionalUnhealthyRatioStrategy para resolver el problema de selección de platos. 
+ * Cada estrategia se basa en criterios específicos, como valor nutricional o insalubridad, permitiendo flexibilidad en la resolución del problema.
+ * 
+ */
 import { Dish } from './dish';
 import { MenuInstance } from './menuinstance';
 import { NutritionalValueStrategy } from './strategy1';
 import { Solver } from './solver';
 import { UnhealthyScoreStrategy } from './strategy2';
 import { NutritionalUnhealthyRatioStrategy } from './strategy3';
+
 // Crear algunos platos de ejemplo
 const dishes: Dish[] = [
     { nutriScore: 10, unhealthyScore: 2 },

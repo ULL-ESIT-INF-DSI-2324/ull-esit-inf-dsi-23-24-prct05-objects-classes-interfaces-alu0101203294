@@ -1,6 +1,11 @@
 import { TipoElemento } from './enums';
+/**
+ * Interfaz para definir la estructura básica de un elemento bibliográfico
+ * Define una interfaz ElementoBibliografico con los atributos comunes a todos los elementos bibliográficos.
+ * @interface ElementoBibliografico
+ * 
+ */
 
-// Interfaz para definir la estructura básica de un elemento bibliográfico
 export interface ElementoBibliografico {
   tipo: TipoElemento;
   titulo: string;

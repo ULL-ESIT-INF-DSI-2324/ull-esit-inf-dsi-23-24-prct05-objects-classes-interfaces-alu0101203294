@@ -6,7 +6,18 @@ import { IEEECapituloLibro } from './capitulolibro';
 import { IEEETrabajoFinGrado } from './tfg';
 import { IEEETrabajoFinMaster } from './tfm';
 
-// Clase para gestionar el gestor de referencias bibliográficas
+/**
+ * Clase para gestionar el gestor de referencias bibliográficas
+ * Define una clase GestorReferenciasBibliograficas con métodos para agregar elementos bibliográficos, mostrar información almacenada y buscar elementos por palabras clave.
+ * @class GestorReferenciasBibliograficas
+ * @constructor elementos - Array de elementos bibliográficos
+ * @method agregarElemento - Método para agregar un elemento bibliográfico
+ * @method mostrarInformacion - Método para mostrar la información almacenada en formato tabla
+ * @method buscarPorPalabrasClave - Método para buscar elementos bibliográficos por palabras clave y mostrar resultados en formato de tabla
+ * @method exportarEnIEEE - Método para exportar los resultados de una búsqueda en formato IEEE
+ * 
+ */
+
 export class GestorReferenciasBibliograficas {
   private elementos: ElementoBibliografico[] = [];
 

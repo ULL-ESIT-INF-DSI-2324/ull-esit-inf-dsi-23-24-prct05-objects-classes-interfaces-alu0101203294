@@ -1,7 +1,13 @@
 import { MenuInstance } from './menuinstance';
 import { MenuSolution } from './menusolution';
 import { Strategy } from './strategy';
-// Clase para la segunda heurística: seleccionar platos por grado de insalubridad creciente
+
+/**
+ * Clase UnhealthyScoreStrategy que implementa la interfaz Strategy
+ * @class UnhealthyScoreStrategy
+ * @constructor
+ * @method selectMenu - Método para seleccionar platos para el menú utilizando la estrategia de insalubridad
+ */
 export class UnhealthyScoreStrategy implements Strategy {
     selectMenu(menuInstance: MenuInstance): MenuSolution {
         const sortedDishes = menuInstance.dishes.sort((a, b) => a.unhealthyScore - b.unhealthyScore);

@@ -1,7 +1,11 @@
 import { FormatoReferencia } from './abstracts';
 import { ElementoBibliografico } from './interfaces';
 
-// Clase concreta para generar referencias en formato IEEE para artículos de revista
+/**
+ * Clase concreta para generar referencias en formato IEEE para artículos de revista
+ * Permite generar referencias en formato IEEE para artículos de revista
+ */
+
 export class IEEEArticuloRevista extends FormatoReferencia {
   generarReferencia(elemento: ElementoBibliografico): string {
     const autores = elemento.autores.join(', ');

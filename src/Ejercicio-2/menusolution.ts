@@ -1,5 +1,12 @@
 import { Dish } from './dish';
-// Clase que representa una solución al problema (conjunto de platos seleccionados para el menú)
+/**
+ * Clase que representa una solución al problema (conjunto de platos seleccionados para el menú)
+ * @class MenuSolution
+ * @constructor
+ * @method addDish - Método para agregar un plato seleccionado al menú
+ * @method totalUnhealthyScore - Método para calcular la suma total de la puntuación de insalubridad de todos
+ */
+
 export class MenuSolution {
     constructor(public selectedDishes: Dish[] = []) {}
 

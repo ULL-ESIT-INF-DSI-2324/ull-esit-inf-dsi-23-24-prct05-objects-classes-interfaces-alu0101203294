@@ -1,7 +1,13 @@
 import { FormatoReferencia } from './abstracts';
 import { ElementoBibliografico } from './interfaces';
+/**
+ * Clase concreta para generar referencias en formato IEEE para trabajos de fin de grado
+ * Permite generar referencias en formato IEEE para trabajos de fin de grado
+ * @class IEEETrabajoFinGrado
+ * @method generarReferencia - Método para generar una referencia en formato IEEE para un trabajo de fin de grado
+ * 
+ */
 
-// Clase concreta para generar referencias en formato IEEE para trabajos de fin de grado
 export class IEEETrabajoFinGrado extends FormatoReferencia {
   generarReferencia(elemento: ElementoBibliografico): string {
     const autores = elemento.autores.join(', ');

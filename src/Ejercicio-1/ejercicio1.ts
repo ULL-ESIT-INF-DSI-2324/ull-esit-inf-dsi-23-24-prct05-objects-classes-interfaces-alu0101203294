@@ -1,7 +1,15 @@
+/**
+ * @module Ejercicio-1 
+ * @summary
+ * 
+ * Este primer ejercicio plantea la creación de un gestor de referencias bibliográficas en TypeScript. Se requiere diseñar e implementar un conjunto de clases e interfaces que permitan gestionar información sobre diferentes tipos de elementos bibliográficos, como artículos de revista, capítulos de libros, trabajos de fin de grado y trabajos de fin de máster.
+ * En este ejercicio, se proporciona un esquema básico que consta de una interfaz ElementoBibliografico que define la estructura común de todos los elementos bibliográficos y clases concretas que extienden la clase abstracta FormatoReferencia para generar referencias en formato IEEE específicas para cada tipo de elemento bibliográfico.
+ * La clase GestorReferenciasBibliograficas se encarga de gestionar los elementos bibliográficos, permitiendo agregar nuevos elementos, mostrar la información almacenada en formato de tabla, buscar elementos por palabras clave y exportar los resultados de una búsqueda en formato IEEE.
+ * Incluye ejemplos de uso, donde se crean instancias concretas de diferentes tipos de elementos bibliográficos (artículo de revista, capítulo de libro, trabajo de fin de grado y trabajo de fin de máster), se agregan al gestor de referencias y se realizan búsquedas y exportaciones en formato IEEE.
+ */
 import { ElementoBibliografico } from './interfaces';
 import { TipoElemento } from './enums';
 import { GestorReferenciasBibliograficas } from './gestorreferencias';
-
 // Ejemplo de uso
 const gestorReferencias = new GestorReferenciasBibliograficas();
 

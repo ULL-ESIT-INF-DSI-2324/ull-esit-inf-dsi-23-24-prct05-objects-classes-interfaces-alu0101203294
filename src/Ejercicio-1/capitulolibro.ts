@@ -1,7 +1,10 @@
 import { FormatoReferencia } from './abstracts';
 import { ElementoBibliografico } from './interfaces';
+/**
+ * Clase concreta para generar referencias en formato IEEE para capítulos de libros
+ * Permite generar referencias en formato IEEE para capítulos de libros
+ */
 
-// Clase concreta para generar referencias en formato IEEE para capítulos de libros
 export class IEEECapituloLibro extends FormatoReferencia {
   generarReferencia(elemento: ElementoBibliografico): string {
     const autores = elemento.autores.join(', ');

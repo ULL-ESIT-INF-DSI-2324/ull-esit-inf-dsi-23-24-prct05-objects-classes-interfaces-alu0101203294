@@ -2,7 +2,12 @@ import { MenuInstance } from './menuinstance';
 import { MenuSolution } from './menusolution';
 import { Strategy } from './strategy';
 
-// Clase para la tercera heurística: seleccionar platos por ratio valor nutricional / grado de insalubridad decreciente
+/**
+ * Clase NutritionalUnhealthyRatioStrategy que implementa la interfaz Strategy
+ * @class Nutritional
+ * @constructor
+ * @method selectMenu - Método para seleccionar platos para el menú utilizando la estrategia de ratio valor nutricional / grado de insalubridad
+ */
 export class NutritionalUnhealthyRatioStrategy implements Strategy {
     selectMenu(menuInstance: MenuInstance): MenuSolution {
         const sortedDishes = menuInstance.dishes

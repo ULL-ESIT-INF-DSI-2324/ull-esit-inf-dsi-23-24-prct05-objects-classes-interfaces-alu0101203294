@@ -1,7 +1,14 @@
 import { MenuInstance } from './menuinstance';
 import { MenuSolution } from './menusolution';
 import { Strategy } from './strategy';
-// Clase para la primera heurística: seleccionar platos por valor nutricional decreciente
+
+/**
+ * Clase NutritionalValueStrategy que implementa la interfaz Strategy
+ * @class NutritionalValueStrategy
+ * @constructor
+ * @method selectMenu - Método para seleccionar platos para el menú utilizando la estrategia de valor nutricional
+ * 
+ */
 export class NutritionalValueStrategy implements Strategy {
     selectMenu(menuInstance: MenuInstance): MenuSolution {
         const sortedDishes = menuInstance.dishes.slice().sort((a, b) => b.nutriScore - a.nutriScore);
