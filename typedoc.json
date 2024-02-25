@@ -1,6 +1,23 @@
 {
     "entryPoints": [
         "./src/index.ts",
+        "./src/Ejercicio-1/ejercicio1.ts",
+        "./src/Ejercicio-1/abstracts.ts",
+        "./src/Ejercicio-1/articulorevista.ts",
+        "./src/Ejercicio-1/capitulolibro.ts",
+        "./src/Ejercicio-1/enums.ts",
+        "./src/Ejercicio-1/gestorreferencias.ts",
+        "./src/Ejercicio-1/tfg.ts",
+        "./src/Ejercicio-1/tfm.ts",
+        "./src/Ejercicio-2/dish.ts",
+        "./src/Ejercicio-2/ejercicio2.ts",
+        "./src/Ejercicio-2/menuinstance.ts",
+        "./src/Ejercicio-2/menusolution.ts",
+        "./src/Ejercicio-2/solver.ts",
+        "./src/Ejercicio-2/strategy.ts",
+        "./src/Ejercicio-2/strategy1.ts",
+        "./src/Ejercicio-2/strategy2.ts",
+        "./src/Ejercicio-2/strategy3.ts",
         "./src/Modificacion/ejercicio1.ts",
 
     ],
