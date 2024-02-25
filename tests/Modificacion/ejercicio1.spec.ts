@@ -1,6 +1,6 @@
 import 'mocha';
 import { expect } from 'chai';
-import { Piece, Board, checkAttack } from '../src/Modificacion/ejercicio1';
+import { Piece, Board, checkAttack } from '../../src/Modificacion/ejercicio1';
 
 describe('Ejercicio 1 - Modificacion', () => {
     it('Debe devolver true para un tablero con reinas en la misma diagonal', () => {
